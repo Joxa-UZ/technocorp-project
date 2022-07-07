@@ -201,7 +201,7 @@ body {
   background-repeat: no-repeat;
   background-position: calc(50% + 640px) calc(50% + 240px);
 }
-.services__theme{
+
 
 .services {
   padding-top: 162px;
@@ -338,7 +338,7 @@ body {
 .about {
   padding-top: 162px;
   padding-bottom: 67px;
-  background-color: #E5E5E5;
+  /* background-color: #E5E5E5; */
 }
 
 .about__title {
@@ -373,8 +373,8 @@ body {
 
 
 
-.about-top,
-.about-bottom{
+/* .about-top, */
+.about__text-box{
   display: flex;
 }
 .about-top{
