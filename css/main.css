@@ -187,7 +187,110 @@ body {
 .site-main {
   flex-grow: 1;
 }
+/* header start*/
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header-inner {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.header-inner__btn {
+  background-color: transparent;
+  border: none;
+  margin-right: 60px;
+  cursor: pointer;
+}
+.header-inner__list {
+  display: flex;
+  margin-left: 70px;
+}
+.header-inner__list-item {
+  margin-left: 15px;
+}
+.header-inner__list-link {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--hd-list-color);
+}
+.header-inner__list-link:hover {
+color: var(--link-bg-color);
+}
+.header-inner__list-link:hover::before {
+opacity: 1;
+}
+.header-inner__list-link:hover::after {
+opacity: 1;
+}
 
+.header-inner__list-link::before,
+.header-inner__list-link::after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 36px;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+.header-inner__list-link::before {
+
+  margin-right: 4px;
+background-image: url("../images/header-hover-border-left.svg");
+
+}
+.header-inner__list-link::after {
+  margin-left: 4px;
+  background-image: url("../images/header-hover-border-right.svg");
+}
+.header-inner__form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header-inner__input-search {
+  padding: 15px 0;
+  width: 0px;
+  margin-right: 20px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  outline: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--text-color-white);
+  transition: width 0.3s linear  ;
+
+}
+.header-inner__input-search--active {
+  width: 200px;
+  padding: 15px ;
+}
+.header-inner__btn-search {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header-inner__input-search:focus {
+  border-bottom: 1px solid #000;
+}
+.header-inner__btn-ask {
+  padding: 15px 37px;
+  border: 1px solid #FFFFFF;
+  font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: var(--text-color-white);
+margin-left: 40px;
+}
+/* header finish */
 
 /* services section */
 

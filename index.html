@@ -15,10 +15,37 @@
   
   <!-- SITE HEADER START -->
   
+   
   <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <button class="header-inner__btn" type="button">
+          <img src="./images/menu.svg" alt="menu icon">
+        </button>
+        <a href="./index.html">
+          <img src="./images/technocorp-header-logo.svg" alt="technocorp-header-logo">
+        </a>
+        <ul class="header-inner__list">
+          <li class="header-inner__list-item">
+            <a href="#" class="header-inner__list-link">Xizmatlar</a>
+          </li>
+          <li class="header-inner__list-item">
+            <a href="#" class="header-inner__list-link">Loyihalar</a>
+          </li>
+          <li class="header-inner__list-item">
+            <a href="#" class="header-inner__list-link">Biz haqimizda</a>
+          </li>
+        </ul>
+        <form class="header-inner__form" action="https://echo.htmlacademy.ru/courses" method="post" autocomplete="off">
+          <input class="header-inner__input-search" type="text"><button class="header-inner__btn-search" type="button" onclick="addsearch()">
+            <img src="./images/search-icon.svg" alt="search-icon">
+          </button>
+        </form>
+        <a href="#" class="header-inner__btn-ask">Savol berish</a>
+      </div>
+    </div>
     
   </header>
-  
   <!-- SITE HEADER END -->
   
   
@@ -260,6 +287,6 @@
     
   </footer>
   <!-- SITE FOOTER END -->
-  
+  <script src="./js/main.js"></script>
 </body>
 </html>
