@@ -1,12 +1,25 @@
 /* VARIABLES */
 
+
 :root{
-  /* --main-text-color : #fff; */
-  /* --main-bg-color : #fff; */
-  /* --main-font-size : 16px; */
-  /* --main-font-weight : 400; */
-  /* --main-line-height : 1.5; */
+  --hd-list-color:#201F1E;
+  --link-bg-color:#0A7F2E;
+  --ser-text-color:#8A8A8A;
+  --text-color-white:#FFFFFF;
+  --ser-rotate-title-cl:#8A8A8A;
+  --text-color-bbb:#BBBBBB;
+  --text-color-201F1E:#201F1E;
+  --text-color-black:#000000;
+  --text-color-82:#828282;
+  --text-color-3E: #3e3e3e;
+  --text-color-77: #777777;
+  --title-color-1A133B:#1A133B;
+  --text-color-9997A2: #9997A2;
+  --time-color-9c:#9c9c9c;
+  --title-color35:#353535;
+  
 }
+
 
 /* Fonts */
 /* oranienbaum-regular - latin_cyrillic */
@@ -15,7 +28,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/oranienbaum-v15-latin_cyrillic-regular.woff2") format("woff2"),
-       url("../fonts/oranienbaum-v15-latin_cyrillic-regular.woff") format("woff");
+  url("../fonts/oranienbaum-v15-latin_cyrillic-regular.woff") format("woff");
 }
 /* exo-2-300 - latin_cyrillic */
 @font-face {
@@ -23,7 +36,7 @@
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/exo-2-v19-latin_cyrillic-300.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/exo-2-v19-latin_cyrillic-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/exo-2-v19-latin_cyrillic-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* exo-2-regular - latin_cyrillic */
 @font-face {
@@ -31,7 +44,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/exo-2-v19-latin_cyrillic-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/exo-2-v19-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/exo-2-v19-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* exo-2-500 - latin_cyrillic */
 @font-face {
@@ -39,7 +52,7 @@
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/exo-2-v19-latin_cyrillic-500.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/exo-2-v19-latin_cyrillic-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/exo-2-v19-latin_cyrillic-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* exo-2-600 - latin_cyrillic */
 @font-face {
@@ -47,7 +60,7 @@
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/exo-2-v19-latin_cyrillic-600.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/exo-2-v19-latin_cyrillic-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/exo-2-v19-latin_cyrillic-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* exo-2-700 - latin_cyrillic */
 @font-face {
@@ -55,7 +68,7 @@
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/exo-2-v19-latin_cyrillic-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/exo-2-v19-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/exo-2-v19-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* manrope-regular - latin */
 @font-face {
@@ -63,8 +76,8 @@
   font-style: normal;
   font-weight: 400;
   src: local(""),
-       url("../fonts/manrope-v12-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/manrope-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/manrope-v12-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url("../fonts/manrope-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-300 - latin */
 @font-face {
@@ -72,7 +85,7 @@
   font-style: normal;
   font-weight: 300;
   src: url("../fonts/roboto-v30-latin-300.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/roboto-v30-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/roboto-v30-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-regular - latin */
 @font-face {
@@ -80,7 +93,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url("../fonts/roboto-v30-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url("../fonts/roboto-v30-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* Fonts */
 
@@ -135,7 +148,7 @@ body{
 /* CONTAINER */
 
 .container{
-  /* max-width: your-size-here; */
+  max-width: 1690px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -145,6 +158,21 @@ body{
 /* STICKY-FOOTER */
 .site-main{
   flex-grow: 1;
+}
+
+.services{
+  padding-top: 162px;
+  padding-bottom: 107px;
+}
+
+.services__theme{
+  margin: 0;
+  padding-left: 23px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--link-bg-color);
+  border-left: 3px solid var(--link-bg-color);
 }
 
 
