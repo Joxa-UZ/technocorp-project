@@ -412,3 +412,170 @@ body {
   line-height: 24px;
   color: #666666;
 }
+
+
+/* Start Connect Section */
+#connect {
+  padding: 140px 0 60px 0;
+  background-color: #E5E5E5;
+}
+
+.connect-main-part {
+  display: flex;
+}
+
+.connect-part {
+  margin-right: 38px;
+}
+
+.connect-part__form-box {
+  width: 810px;
+}
+
+.connect-part__label,
+.connect-part__comment-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8B8B8B;
+}
+
+.connect-part__input,
+.connect-part__comment {
+  margin-bottom: 40px;
+  padding: 20px;
+  width: 810px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8B8B8B;
+  border: 1px solid #E7E7E7;
+}
+
+.connect-part__input {
+  margin-top: 15px;
+}
+
+.connect-part__input-box .connect-part__label input {
+  width: 375px;
+  margin-right: 60px;
+}
+
+.connect-part__input-box .connect-part__label:nth-child(2) input {
+  margin-right: 0;
+}
+
+.connect-part__input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.connect-part__comment {
+  margin-bottom: 60px;
+  resize: none;
+}
+
+.connect-part__comment-text {
+  margin: 0 0 15px 0;
+}
+
+.connect-part__btn {
+  padding: 14px 46px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--text-color-white);
+  background-color: var(--link-bg-color);
+  border: none;
+}
+
+.schedule-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.schedule-info {
+  width: 630px;
+  padding: 30px 30px 30px 20px;
+  background-color: var(--text-color-white);
+  box-shadow: 0px 0px 30px #0000001a;
+}
+
+.schedule-info__boxes {
+  display: flex;
+  align-items: center;
+}
+
+.schedule-info__box {
+  width: 290px;
+  margin-bottom: 43px;
+}
+
+.schedule-info__title {
+  margin: 0 0 15px 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--link-bg-color);
+}
+
+.schedule-info__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999988;
+  text-decoration: none;
+}
+
+.schedule-links__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.schedule-links__item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.schedule-links__days-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.schedule-links__days-item {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--text-color-white);
+  background-color: #0A7F2E;
+  box-shadow: 0px 4px 4px #0a7f2e40;
+  cursor: pointer;
+}
+.schedule-links__days-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.schedule-links__days-item:nth-child(6),
+.schedule-links__days-item:nth-child(7) {
+  background-color: #CCCCCC;
+  box-shadow: 0px 4px 4px #79797940;
+}
+
+.connect-info__location {
+  margin-top: 60px;
+  border: none;
+}
+
+/* End of Connect Section */
