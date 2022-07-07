@@ -616,7 +616,7 @@ line-height: 42px;
 /* Start Connect Section */
 #connect {
   padding: 140px 0 60px 0;
-  background-color: #E5E5E5;
+  /* background-color: #E5E5E5; */
 }
 
 .connect-main-part {
