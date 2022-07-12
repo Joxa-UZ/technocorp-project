@@ -616,8 +616,11 @@ cursor: pointer;
 }
 
 .imgs__item{
-  filter: drop-shadow(0px 4px 30px rgba(10, 127, 46, 0.15));
+  
   margin-left: 30px;
+}
+.imgs__item > img{
+filter: drop-shadow(0px 4px 30px rgba(10, 127, 46, 0.15));
 }
 
 .imgs__item:nth-child(1), .imgs__item:nth-child(2), .imgs__item:nth-child(3){
