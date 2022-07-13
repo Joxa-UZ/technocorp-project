@@ -1,0 +1,439 @@
+/* VARIABLES */
+
+
+:root {
+    --hd-list-color: #201F1E;
+    --link-bg-color: #0A7F2E;
+    --ser-text-color: #8A8A8A;
+    --text-color-white: #FFFFFF;
+    --ser-rotate-title-cl: #8A8A8A;
+    --text-color-bbb: #BBBBBB;
+    --text-color-201F1E: #201F1E;
+    --text-color-black: #000000;
+    --text-color-82: #828282;
+    --text-color-3E: #3e3e3e;
+    --text-color-77: #777777;
+    --title-color-1A133B: #1A133B;
+    --text-color-9997A2: #9997A2;
+    --time-color-9c: #9c9c9c;
+    --title-color35: #353535;
+  
+  }
+  
+  
+  /* Fonts */
+  /* oranienbaum-regular - latin_cyrillic */
+  @font-face {
+    font-family: "Oranienbaum";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/oranienbaum-v15-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/oranienbaum-v15-latin_cyrillic-regular.woff") format("woff");
+  }
+  
+  /* exo-2-300 - latin_cyrillic */
+  @font-face {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/exo-2-v19-latin_cyrillic-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/exo-2-v19-latin_cyrillic-300.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* exo-2-regular - latin_cyrillic */
+  @font-face {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/exo-2-v19-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/exo-2-v19-latin_cyrillic-regular.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* exo-2-500 - latin_cyrillic */
+  @font-face {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/exo-2-v19-latin_cyrillic-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/exo-2-v19-latin_cyrillic-500.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* exo-2-600 - latin_cyrillic */
+  @font-face {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/exo-2-v19-latin_cyrillic-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/exo-2-v19-latin_cyrillic-600.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* exo-2-700 - latin_cyrillic */
+  @font-face {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/exo-2-v19-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/exo-2-v19-latin_cyrillic-700.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* manrope-regular - latin */
+  @font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+    url("../fonts/manrope-v12-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/manrope-v12-latin-regular.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* roboto-300 - latin */
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/roboto-v30-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/roboto-v30-latin-300.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* Fonts */
+  
+  /* GENERAL */
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+  }
+  
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Exo 2", "Times New Roman", serif;
+  }
+  
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  /* CONTAINER */
+  
+  .container {
+    max-width: 1690px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  /* STICKY-FOOTER */
+  .site-main {
+    flex-grow: 1;
+  }
+/* header site */
+/* header start*/
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .site-header-fake{
+    position: relative;
+  }
+  .header-inner {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+  }
+  .header-inner__btn {
+    background-color: transparent;
+    border: none;
+    margin-right: 60px;
+    cursor: pointer;
+  }
+  .header-inner__list {
+    display: flex;
+    margin-left: 70px;
+  }
+  .header-inner__list-item {
+    margin-left: 15px;
+  }
+  .header-inner__list-link {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--hd-list-color);
+  }
+  .header-inner__list-link:hover {
+    color: var(--link-bg-color);
+  }
+  .header-inner__list-link:hover::before {
+    opacity: 1;
+  }
+  .header-inner__list-link:hover::after {
+    opacity: 1;
+  }
+  
+  .header-inner__list-link::before,
+  .header-inner__list-link::after {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 36px;
+    background-repeat: no-repeat;
+    opacity: 0;
+  }
+  .header-inner__list-link::before {
+  
+    margin-right: 4px;
+    background-image: url("../images/header-hover-border-left.svg");
+  
+  }
+  .header-inner__list-link::after {
+    margin-left: 4px;
+    background-image: url("../images/header-hover-border-right.svg");
+  }
+  .header-inner__form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .header-inner__input-search {
+    padding: 15px 0;
+    width: 0px;
+    margin-right: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--text-color-white);
+    transition: width 0.3s linear  ;
+  
+  }
+  .header-inner__input-search--active {
+    width: 200px;
+    padding: 15px ;
+  }
+  .header-inner__btn-search {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .header-inner__input-search:focus {
+    border-bottom: 1px solid #000;
+  }
+  .header-inner__btn-ask {
+    padding: 15px 37px;
+    border: 1px solid #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--text-color-white);
+    margin-left: 40px;
+  }
+  /* header finish */
+/* header site */
+/* footer */
+.site-footer {
+    background-image: url("../images/vacancy-footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .footer-inner {
+    padding: 134px 0 92px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-grop {
+    width: 420px;
+  }
+  .logo-grop__title {
+    font-family: 'Exo 2';
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--text-color-white);
+  }
+  .logo-grop__text {
+    font-family: 'Exo 2';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color:var(--text-color-white) ;
+  }
+  .links {
+    width: 471px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .links__list {
+    
+  }
+  .links__list-item {
+    margin-bottom: 17px;
+  }
+  .links__list-item:last-child {
+  margin-bottom: 0;
+  }
+  .links__list-link {
+    font-family: 'Exo 2';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--text-color-white);
+  }
+  .links__title {
+    margin: 0 0 30px 0;
+    font-family: 'Exo 2';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--text-color-white);
+  }
+  .addres {
+    width: 376px;
+  }
+  .addres__name {
+    margin: 0 0 15px 0;
+    font-family: 'Exo 2';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--text-color-white);
+  }
+  .addres__location {
+    margin: 0 0 38px 0;
+    font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text-color-white);
+  }
+  .addres__mail {
+    margin: 0 0 15px 0;
+    font-family: 'Exo 2';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--text-color-white);
+  }
+  .addres__mail-id {
+    margin: 0 0 36px 0;
+    font-family: 'Exo 2';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--text-color-white);
+  }
+  .number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .phone-number {
+    font-family: 'Exo 2';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--text-color-white);
+  }
+  .addres__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 110px;
+  }
+  .footer-bottom::before {
+    content: "";
+  width: 100%;
+  height: 1px ;
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+  bottom: 85px;
+  }
+  .footer-bottom {
+  
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  .footer-bottom__text {
+    font-family: 'Exo 2';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text-color-white);
+  }
+  .advertising-group {
+    width: 206px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* footer finish */
